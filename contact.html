@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <title>All products - Redstore</title>
+    <link rel="stylesheet" href="stye.css">
+    <link rel="stylesheet" href="cir.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="icons/cash-back.png" width="50px">
+                </div>
+                <a href="index.html">
+                    <h2 style="padding: 0 12px; font-size: 35px;">
+                        <span style="color: rgb(255, 0, 21);">RED</span>
+                        <span>STORES</span>
+                    </h2></a>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" width="30px" height="30px" class="menu-icon" 
+                onclick="menutoggle()">
+            </div>
+        </div>
+<!--------------------------- Content slider ------------------------->
+
+<!-------------------------------logos------------------------------>
+
+
+
+<!-------------------------------logos------------------------------>
+
+
+<div class="bod">
+    <div class="menu">
+        <div class="toggle"><ion-icon name="share-social"></ion-icon></div>
+            <li style="--i:0;--clr:#1877f2;">
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            </li>
+            <li style="--i:1;--clr:#25d366;">
+                <a href="#"><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </li>
+            <li style="--i:2;--clr:#1da1f2;">
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </li>
+            <li style="--i:3;--clr:#ea4c89;">
+                <a href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
+            </li>
+            <li style="--i:4;--clr:#0a66c2;">
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </li>
+            <li style="--i:5;--clr:#c32aa3;">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            </li>
+            <li style="--i:6;--clr:#bd081c;">
+                <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+            </li>
+            <li style="--i:7;--clr:#ff0000;">
+                <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+            </li>
+    </div>
+</div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        let toggle = document.querySelector('.toggle');
+        let menu = document.querySelector('.menu');
+        toggle.onclick = function(){
+            menu.classList.toggle('active')
+        }
+    </script>
+
+
+<!--------------------------Footer--------------------------->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for android and ios mobiles</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose is to sustainably make the pleasure and benifits of sports accessible to the many</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Usefull Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affilate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Meta</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>You Tube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 -E Commerce website</p>
+        </div>
+    </div> 
+<script src="javascript.js"></script>
+
+
+
+<!-----------------------------js for toggle menu-------------------------->
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px"){
+            MenuItems.style.maxHeight = "100%"
+        }
+        else{
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+</script>
+</body>
+</html>

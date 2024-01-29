@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#" onsubmit="return validateForm()">
+                  <div class="field email-field">
+                    <div class="input-field">
+                      <input type="email" placeholder="Enter your email" class="email" />
+                    </div>
+                    <span class="error email-error">
+                      <i class="bx bx-error-circle error-icon"></i>
+                      <p class="error-text">Please enter a valid email</p>
+                    </span>
+                  </div>
+                  <div class="field create-password">
+                    <div class="input-field">
+                      <input
+                        type="password"
+                        placeholder="Create password"
+                        class="password"
+                      />
+                      <i class="bx bx-hide show-hide"></i>
+                    </div>
+                    <span class="error password-error">
+                      <i class="bx bx-error-circle error-icon"></i>
+                      <p class="error-text">
+                        Please enter atleast 8 charatcer with number, symbol, small and
+                        capital letter.
+                      </p>
+                    </span>
+                  </div>
+                  <div class="field confirm-password">
+                    <div class="input-field">
+                      <input
+                        type="password"
+                        placeholder="Confirm password"
+                        class="cPassword"
+                      />
+                      <i class="bx bx-hide show-hide"></i>
+                    </div>
+                    <span class="error cPassword-error">
+                      <i class="bx bx-error-circle error-icon"></i>
+                      <p class="error-text">Password don't match</p>
+                    </span>
+                  </div>
+                  <div class="input-field button">
+                    <input type="submit" value="Submit Now" />
+                  </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup Now</a>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="field email-field">
+                      <div class="input-field">
+                        <input type="email" placeholder="Enter your email" class="email" />
+                      </div>
+                      <span class="error email-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">Please enter a valid email</p>
+                      </span>
+                    </div>
+                    <div class="field create-password">
+                      <div class="input-field">
+                        <input
+                          type="password"
+                          placeholder="Create password"
+                          class="password"
+                        />
+                        <i class="bx bx-hide show-hide"></i>
+                      </div>
+                      <span class="error password-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">
+                          Please enter atleast 8 charatcer with number, symbol, small and
+                          capital letter.
+                        </p>
+                      </span>
+                    </div>
+                    <div class="field confirm-password">
+                      <div class="input-field">
+                        <input
+                          type="password"
+                          placeholder="Confirm password"
+                          class="cPassword"
+                        />
+                        <i class="bx bx-hide show-hide"></i>
+                      </div>
+                      <span class="error cPassword-error">
+                        <i class="bx bx-error-circle error-icon"></i>
+                        <p class="error-text">Password don't match</p>
+                      </span>
+                    </div>
+                    <div class="input-field button">
+                      <input type="submit" value="Submit Now" />
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Result check</title>
+</head>
+<style>
+#main{
+height:100%;
+width:100%;
+background-image: url('sd.jpg');
+background-position: center;
+background-size: cover;
+position:absolute;
+}
+#input{
+width:24rem;
+height:28rem;
+box-shadow:10px 10px 15px coral;
+position:relative;
+margin:6% auto;
+border-redius:1rem;
+font-weight:bolder;
+background-color:#12475f;
+padding: 12px;
+color:white;
+text-align:center;
+}
+input{
+font-weight:bolder;
+border:none;
+margin:10px;
+padding:10px;
+box-shadow:4px 4px 10px white;
+border-radius:9px;
+background-color:brown;
+cursor:pointer;
+color:white;
+cursor:pointer;
+}
+p{
+margin-top:15px
+}
+</style>
+<body>
+<div id="main">
+<div id="input" align="center">
+<marquee><h2>Enter your name and find out your result</h2></marquee>
+<input type="text" name="" id="Student name" placeholder="Student name"><br><br>
+<input type="button" name="" onclick="result()" value="Check your result!">
+<p id="output"></p>
+</div>
+</div>
+</body>
+
+<body>
+<style>
+<script>
+function result(){
+var students= {
+hari:{
+maths:"96",
+physics:"91",
+chemistry:"89",
+},
+ruby:{
+maths:"85",
+physics:"92",
+chemistry:"80",
+},
+karthi:{
+maths:"94",
+physics:"89",
+chemistry:"89",
+}
+}
+var studentname=document.getElementById("studentname").value;
+var input=student.toUpperCase();
+var definition=student[input];
+var output=document.getElementById("output");
+
+if(definition==undefined){
+output.innerHTML=<hr>There is no information about this student.<hr>;
+}else
+{
+output.innerHTML=<hr> math score is ${definition.math}.<hr> physics score is ${definition.physics}.
+<hr> chemistry score is ${definition.chemistry}.<hr>;
+};
+};gg
+</style>
+</script>
+</body>
+</html>
